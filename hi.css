@@ -5,6 +5,11 @@ h4{
     font-size: 25px;
 }
 
+header {
+    text-align: center;
+    font-size: xx-large;
+}
+
 main {
     grid-area: "main";
     display: grid;
@@ -40,10 +45,17 @@ main {
 #images {
     animation: slideshow 120s;
     animation-iteration-count: infinite;
+    width: 40vw;
+    height: 50vh;
 }
 
 .textcontent {
     font-size:xx-large;
+}
+
+main {
+    text-align: center;
+    font-weight: 400;
 }
 
 #text {

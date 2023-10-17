@@ -1,11 +1,15 @@
 figcaption {
-    font-size: 10;
+    font-size: 10px;
 }
 h4{
-    font-size: 25;
+    font-size: 25px;
 }
-li {
-    font-size: 25;
+
+main {
+    grid-area: "main";
+    display: grid;
+    grid-template-areas: 
+        "text" "images";
 }
 
 main {
@@ -107,4 +111,7 @@ body::-webkit-scrollbar-button {
     to {
         content:url(./img/babylon2.jpeg)
     }
+}
+#6675636B{
+    clear:both;
 }

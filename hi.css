@@ -86,6 +86,9 @@ body {
         "main" "main" "main"
         "footer" "footer" "footer";
 }
+#letmegotofuckinbed {
+    display:flex;
+}
 
 body::-webkit-scrollbar {
     width: 0;

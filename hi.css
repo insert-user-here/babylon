@@ -7,6 +7,104 @@ h4{
 li {
     font-size: 25;
 }
+
+main {
+    grid-area: "main";
+    display: grid;
+    grid-template-areas: 
+        "text" "images";
+}
 #bottom {
     font-size: 7;
+    grid-area: "footer";
+    width: 100vw;
+    background: gray;
+    height: 5vh;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+#imageee {
+    grid-area: "images";
+    display: inline-block
+}
+
+#images {
+    animation: slideshow 120s;
+    animation-iteration-count: infinite;
+}
+
+.textcontent {
+    font-size:xx-large;
+}
+
+#text {
+    display: grid;
+    place-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    grid-area: "text";
+    display: inline-block;
+}
+
+#header {
+    width: 100vw;
+    background: gray;
+    height: 5vh;
+    top: 0;
+    text-align: center;
+    display: flex;
+    grid-area: "header";
+}
+
+body {
+    display: grid;
+    
+    grid-template-areas: 
+        "header" "header" "header"
+        "main" "main" "main"
+        "footer" "footer" "footer";
+}
+
+body::-webkit-scrollbar {
+    width: 0;
+}
+
+body::-webkit-scrollbar-thumb {
+    width: 0;
+}
+
+body::-webkit-scrollbar-track {
+    width: 0;
+}
+
+body::-webkit-scrollbar-button {
+    width: 0;
+}
+
+@keyframes slideshow {
+    from {
+        content:url(./img/babylon2.jpeg)
+    }
+    16% {
+        content: url(./img/babylon4.jpeg);
+    }
+    32% {
+        content: url(./img//babylon9.jpeg);
+    }
+    48% {
+        content: url(./img/babylon1111.jpeg);
+    }
+    64% {
+        content: url(./img/babylon38049801238094321890234189024318094231840392182340.jpeg);
+    }
+    80% {
+        content: url(./img//themap.png.gif.io.en.us.co.com.jpeg)
+    }
+    to {
+        content:url(./img/babylon2.jpeg)
+    }
 }
